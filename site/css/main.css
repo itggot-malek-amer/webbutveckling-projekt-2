@@ -1,0 +1,450 @@
+body,h1{
+    margin: 0;
+    
+}
+
+        /* Frontpage */
+
+.wrapper-index{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+    background-image: url(../img/ackgrund\ baca.jpg)
+}
+
+
+footer.index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2em;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2.5rem;
+
+    height: 55%;
+    width: 65%;
+    background-color: rgb( 178, 69, 58);
+    border-radius: 70px;
+}
+
+nav.index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    height: 40%;
+    width: 40%;
+    background-color: rgb(49, 126,84);
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em
+}
+
+h2{
+    color: whitesmoke;
+}
+
+
+/* Startpage */
+
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 26%  74%;
+    grid-template-areas: 
+    "header" 
+    "main";
+   
+    background-image: url(../img/ackgrund\ baca.jpg);
+}
+
+.material-icons{
+    font-size: 5rem;
+    color: black;
+}
+
+.navigate{
+    position: absolute;
+    left:10px;
+    top:10px;
+}
+
+header{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0%; */
+    
+    position: sticky;
+    top:0;
+    
+    grid-area: header;
+    color: wheat;
+}
+
+.name{
+    color: wheat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 50%;
+    width: 65%;
+    margin-top: 70px;
+
+    font-size: 1.8rem;
+    font-style: italic;
+   
+    background-color: rgb( 178, 69, 58);
+    border-radius: 50px;
+    border-style: solid;
+    border-width: 5px;
+}
+.name:link, .name:visited{
+    text-decoration: none;
+}
+
+nav.start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* grid-row: 2/ span 1; */
+    z-index: 1000;
+
+    color: wheat;
+    position: fixed;
+    top: 0px;
+    left: -500px;
+
+    transition: left 0.5s;
+    
+    height: 100vh;
+    width: 50%;
+
+    border-style: outset;
+    border-radius: 60px;
+    border-width: 5px;
+
+    flex-direction: column;
+
+    background-color: rgb(178, 219,255);
+
+    -webkit-box-shadow: inset -1px 11px 131px 34px rgba(0,0,0,0.36);
+    -moz-box-shadow: inset -1px 11px 131px 34px rgba(0,0,0,0.36);
+    box-shadow: inset -1px 11px 131px 34px rgba(0,0,0,0.36);
+}
+
+
+    
+
+.klader ,.saker, .tema{
+    background-color: blueviolet;
+    height: 10%;
+    width: 50%;
+
+    margin-top: 40px;
+
+    font-size: 1.5rem;
+    border-radius: 70px;
+    font-style: italic;
+
+    color: wheat;
+    border-style: solid;
+    border-width: 5px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    z-index: 100;
+}
+a:link{
+    text-decoration: none;
+    color: wheat;
+    
+}
+
+.klader:active, .saker:active, .tema:active{
+    -webkit-box-shadow: inset 15px 33px 300px 24px rgba(0,0,0,0.77);
+    -moz-box-shadow: inset 15px 33px 300px 24px rgba(0,0,0,0.77);
+    box-shadow: inset 15px 33px 300px 24px rgba(0,0,0,0.77);
+}
+
+
+.blurr{
+    z-index: 500;
+
+    width:110vw;
+    height: 110vh;
+
+   
+
+    position: fixed;
+    top: 0;
+    left:-200vw;
+
+    transition: left 0.5s
+}
+.blur{
+    filter: blur(2px);
+}
+
+nav.active, .active{
+    position: fixed;
+    left: 0px;
+   
+}
+
+main{
+    grid-area: main;
+
+    border-style: solid;
+    border-width: 6px;
+    color: antiquewhite;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 20% 35%;
+
+}
+
+.julklappar, .middle, .dealz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: span 2;
+}
+.bild{
+    height: 100%;
+    width: 70%;
+    background-image: url(../img/blackboard.jpg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1rem;
+    color: wheat;
+
+    margin-top: 52px;
+    border-radius: 20px;
+    border-width:7px;  
+    border-style:groove;
+    border-color: wheat;
+
+    -webkit-box-shadow: inset -1px 11px 131px 34px rgba(0,0,0,0.36);
+    -moz-box-shadow: inset -1px 11px 131px 34px rgba(0,0,0,0.36);
+    box-shadow: inset -1px 11px 131px 34px rgba(0,0,0,0.36);
+}
+
+.msg{
+    height: 30%;
+    width: 90%;
+    background-image: linear-gradient(to bottom right, rgb( 178, 69, 58),  rgb(49, 126,84));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-width:7px;  
+    border-style:groove;
+    border-color: wheat;
+}
+
+.percent1, .percent2{
+
+    height: 65%;
+    width: 45%;
+    margin: 2%;
+    border-style: solid;
+    border-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    color: red;
+}
+
+.percent1{
+    background-image: linear-gradient(to right, rgb(170, 178, 171),rgb(49, 126,84) );  
+}
+.percent2{
+    background-image: linear-gradient(to right,rgb(49, 126,84),  rgba(170,178,171) );
+}
+
+.percent1:active, .percent2:active{
+
+    -webkit-box-shadow: inset 38px 44px 262px 9px rgba(0,0,0,0.77);
+-moz-box-shadow: inset 38px 44px 262px 9px rgba(0,0,0,0.77);
+box-shadow: inset 38px 44px 262px 9px rgba(0,0,0,0.77);
+}
+
+      /* sakpage */
+
+.wrapper-saker{
+    height:130vh;
+
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "header"
+    "main2";
+
+    background-image: url(../img/ackgrund\ baca.jpg);
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+}
+
+aside{
+    height: 100%;
+    grid-area: main2;
+    /* border-style: solid;
+    border-width: 6px;
+    color: antiquewhite; */
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  15% 42.5% 42.5%;
+    
+    grid-template-areas:
+    "filter filter"
+    "sak1 sak2"
+    "sak3 sak4"
+}
+
+.active3{
+    display: grid;
+    grid-template-areas:
+    "filter filter"
+    "sak2 sak1"
+    "sak3 sak4"
+}
+
+.active4{
+    display: grid;
+    grid-template-areas:
+    "filter filter"
+    "sak4 sak3"
+    "sak1 sak2"
+}
+
+
+.filter{
+    grid-column: span 2;
+    height: 20%;
+    width: 20%;
+    background-color: aliceblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: filter;
+    
+    
+}
+
+.box{
+    height: 12.5%;
+    width: 20%;
+
+
+    position: absolute;
+    top: 15%;
+    z-index: -1;
+    
+    transition: top 0.5s;
+
+    background-color: white;
+}
+
+.active2{
+    position: absolute;
+    top: 19%;
+    z-index: 2;
+}
+
+.pris1, .pris2{
+    font-size: 1rem;
+    border-style: solid;
+}
+
+.pris1:active , .pris2:active{
+
+    -webkit-box-shadow: inset 38px 44px 262px 9px rgba(0,0,0,0.77);
+-moz-box-shadow: inset 38px 44px 262px 9px rgba(0,0,0,0.77);
+box-shadow: inset 38px 44px 262px 9px rgba(0,0,0,0.77);
+}
+
+.sak1{
+    background-image: url(../img/t-shirt1.png);
+    /* grid-area: sak1 */
+    grid-area: sak1;
+    
+}
+.sak2{
+    background-image: url(../img/leksak.png);
+        grid-area: sak2
+}
+
+
+.sak3{
+    background-image: url(../img/byxa.png);
+    grid-area: sak3
+  
+}
+
+.sak4{
+    background-image: url(../img/roblox.png);
+    grid-area: sak4
+}
+
+.sak1 , .sak2, .sak3, .sak4{
+    border-style: solid;
+    margin: 5px;
+
+    font-size: 2.6rem;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    color:red;
+}
+
+h4{
+    background-color: white;
+    height: 12%;
+    width: 27%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h5{
+    
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
